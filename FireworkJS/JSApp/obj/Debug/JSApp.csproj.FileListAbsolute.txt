@@ -1,0 +1,5 @@
+C:\Users\ARCHANGEL\Documents\GitHub\JSApp\JSApp\bin\JSApp.dll
+C:\Users\ARCHANGEL\Documents\GitHub\JSApp\JSApp\bin\JSApp.pdb
+C:\Users\ARCHANGEL\Documents\GitHub\JSApp\JSApp\obj\Debug\JSApp.csprojResolveAssemblyReference.cache
+C:\Users\ARCHANGEL\Documents\GitHub\JSApp\JSApp\obj\Debug\JSApp.dll
+C:\Users\ARCHANGEL\Documents\GitHub\JSApp\JSApp\obj\Debug\JSApp.pdb

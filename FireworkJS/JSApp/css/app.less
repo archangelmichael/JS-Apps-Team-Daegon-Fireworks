@@ -1,0 +1,154 @@
+﻿html {
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.gradient() {
+    background: -webkit-linear-gradient(lightblue, royalblue, purple); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(lightblue, royalblue, purple); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(lightblue, royalblue, purple); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(lightblue, royalblue, purple); /* Standard syntax */
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.presentFont() {
+    font-family: 'Shadows Into Light';
+    font-weight: bold;
+}
+
+.present-title {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    font-size: 60px;
+    .gradient();
+}
+
+.present-text {
+    position: absolute;
+    top: 200px;
+    left: 150px;
+    font-size: 70px;
+    .gradient();
+}
+
+#fireworks-target {
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 100%;
+    width: 66%;
+    position: absolute;
+    top: 0;
+    right: 400px;
+    bottom: 0;
+}
+
+#fireworks-options {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 400px;
+    overflow: hidden;
+
+    > .presets {
+        position: absolute;
+        width: 400px;
+
+        .presets-select {
+            margin-top: 35px;
+            padding-left: 20px;
+            padding-right: 20px;
+
+            .generate {
+                margin-top: 10px;
+            }
+
+            .modal {
+                overflow-y: hidden;
+
+                .modal-body {
+                    -ms-word-break: break-all;
+                    word-break: break-all;
+                }
+            }
+        }
+
+        .url-choose {
+            margin-top: 20px;
+        }
+
+        &:after {
+            content: "Presets";
+            position: absolute;
+            top: 20px;
+            left: 30px;
+            font-size: 12px;
+            font-weight: 700;
+            color: #bbb;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+    }
+
+    > .options {
+        position: absolute;
+        top: 200px;
+        right: 0;
+        bottom: 0;
+        width: 400px;
+
+        > .panel {
+            height: 100%;
+
+            .panel-body {
+                position: relative;
+                height: 100%;
+
+                .scrollable {
+                    position: absolute;
+                    top: 45px;
+                    left: 0;
+                    right: 0;
+                    bottom: 20px;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    overflow: auto;
+                }
+            }
+        }
+
+        &:after {
+            content: "Available Options";
+            position: absolute;
+            top: 20px;
+            left: 30px;
+            font-size: 12px;
+            font-weight: 700;
+            color: #bbb;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .greeting {
+            textarea {
+                width: 300px;
+            }
+        }
+
+        .option {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    }
+}
